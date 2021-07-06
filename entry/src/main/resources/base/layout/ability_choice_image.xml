@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:background_element="#00ff00"
+    ohos:orientation="vertical">
+
+    <Button
+        ohos:id="$+id:ability_choice_image_button"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="center"
+        ohos:text_size="35vp"
+        ohos:text_color="#FF0000"
+        ohos:text="相册图片选择"/>
+
+    <Image
+        ohos:id="$+id:ability_choice_image_image"
+        ohos:height="match_content"
+        ohos:width="match_content"/>
+
+</DirectionalLayout>

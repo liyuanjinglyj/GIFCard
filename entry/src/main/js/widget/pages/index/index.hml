@@ -1,0 +1,3 @@
+<div class="list_pattern_layout">
+    <image class="div_image" src="{{imageUrl}}"/>
+</div>

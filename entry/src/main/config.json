@@ -1,0 +1,115 @@
+{
+  "app": {
+    "bundleName": "com.liyuanjinglyj.gifcard",
+    "vendor": "liyuanjinglyj",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.WRITE_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA"
+      }
+    ],
+    "package": "com.liyuanjinglyj.gifcard",
+    "name": ".MyApplication",
+    "mainAbility": "com.liyuanjinglyj.gifcard.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.liyuanjinglyj.gifcard.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.liyuanjinglyj.gifcard.widget.WidgetAbility",
+        "icon": "$media:icon",
+        "description": "$string:widget_widgetability_description",
+        "formsEnabled": true,
+        "label": "$string:entry_WidgetAbility",
+        "type": "page",
+        "forms": [
+          {
+            "jsComponentName": "widget",
+            "isDefault": true,
+            "formConfigAbility": "ability://com.liyuanjinglyj.gifcard.ChoiceImageAbility",
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "widget",
+            "description": "This is a service widget",
+            "colorMode": "auto",
+            "type": "JS",
+            "supportDimensions": [
+              "2*2"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          }
+        ],
+        "launchType": "singleton"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.liyuanjinglyj.gifcard.ChoiceImageAbility",
+        "icon": "$media:icon",
+        "description": "$string:choiceimageability_description",
+        "label": "$string:entry_ChoiceImageAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        }
+      },
+      {
+        "pages": [
+          "pages/index/index"
+        ],
+        "name": "widget",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        },
+        "type": "form"
+      }
+    ]
+  }
+}

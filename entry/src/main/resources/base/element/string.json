@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_Empty Ability"
+    },
+    {
+      "name": "widget_widgetability_description",
+      "value": "This is a WidgetAbility"
+    },
+    {
+      "name": "entry_WidgetAbility",
+      "value": "entry_WidgetAbility"
+    },
+    {
+      "name": "choiceimageability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "choiceimageability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ChoiceImageAbility",
+      "value": "entry_ChoiceImageAbility"
+    }
+  ]
+}

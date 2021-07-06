@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "entry_ChoiceImageAbility",
+      "value": "entry_ChoiceImageAbility"
+    },
+    {
+      "name": "choiceimageability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "choiceimageability_HelloWorld",
+      "value": "Hello World"
+    }
+  ]
+}

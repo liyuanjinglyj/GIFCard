@@ -1,0 +1,13 @@
+{
+  "data": {
+    "imageUrl": ""
+  },
+  "actions": {
+    "freeUpEvent": {
+      "action": "message",
+      "params": {
+        "mAction": "free up memory"
+      }
+    }
+  }
+}
